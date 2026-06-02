@@ -43,6 +43,17 @@
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
 
+  a {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
   a + a {
     opacity: 0.5;
   }
