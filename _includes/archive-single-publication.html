@@ -20,10 +20,5 @@
       <span class="publication-entry__year">{{ include.post.date | date: "%Y" }}</span>
     {% endif %}
   </p>
-  {% if include.post.arxivurl and include.post.venue != "arXiv" %}
-    <p class="publication-entry__links"><a href="{{ include.post.arxivurl }}">Download arXiv version</a></p>
-  {% endif %}
-  {% if include.post.venue == "arXiv" and include.post.paperurl %}
-    <p class="publication-entry__links"><a href="{{ include.post.paperurl }}">Download arXiv version</a></p>
-  {% endif %}
+  {# Removed explicit arXiv download links for a cleaner minimal layout #}
 </div>
