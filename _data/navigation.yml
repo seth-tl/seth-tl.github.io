@@ -17,8 +17,5 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "CV"
-    url: /cv/
-    
   - title: "Posts"
-    url: /year-archive/
+    url: /year-archive/ 
