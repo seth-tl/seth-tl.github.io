@@ -59,6 +59,67 @@
   }
 }
 
+.publication-category {
+  margin-bottom: 2rem;
+}
+
+.publication-category h2 {
+  margin-bottom: 1rem;
+  font-size: $type-size-4;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.publication-entry {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.publication-entry__authors {
+  margin: 0 0 0.25rem;
+  font-size: $type-size-6;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+}
+
+.publication-entry__title {
+  margin: 0 0 0.35rem;
+  font-size: $type-size-5;
+}
+
+.publication-entry__title a {
+  color: inherit;
+}
+
+.publication-entry__venue {
+  margin: 0;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+.publication-entry__year {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.publication-entry__links {
+  margin: 0.85rem 0 0;
+}
+
+.publication-entry__links a {
+  color: var(--global-link-color);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.publication-entry__links a:hover,
+.publication-entry__links a:focus {
+  opacity: 0.8;
+}
+
 /* remove border*/
 .page__content {
 
