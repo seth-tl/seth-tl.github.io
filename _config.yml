@@ -23,12 +23,12 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "headshot_Seth.jpg"
   name             : "Seth Taylor"
   pronouns         : "he/him"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PIMS Postoctoral Fellow. Ph.D. Mathematics."
   location         : "Saskatoon, SK, Canada"
-  employer         : "University of Saskatchewan, Department of Computer Science"
+  employer         : "University of Saskatchewan"
   uri              : # URL
   email            : "seth.taylor[at]usask[dot]ca" 
 
