@@ -7,9 +7,10 @@ redirect_from:
   - /about.html
 ---
 
+I am PIMS Postdoctoral Fellow in the Deparment of Computer Science at the University of Saskatchewan. I earned my Ph.D. from McGill University in the Department of Mathematics and Statistics under the supervision of Jean-Christophe Nave. My core expertise is in computational mathematics, numerical analysis, and geometric mechanics however I maintain a wide variety of research interests including information theory, optimal transport, atmospheric dynamics, machine learning, and computational ecology. 
 
-Research 
-======
 
+<!-- Research 
+====== -->
 
 
