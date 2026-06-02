@@ -1,7 +1,7 @@
 ---
 title: "A characteristic mapping method for incompressible hydrodynamics on a rotating sphere"
 collection: publications
-category: peer-reviewed
+category: preprints
 permalink: /publication/2023-10-19-characteristic-mapping
 date: 2023-10-19
 authors: 'Seth Taylor, Jean-Christophe Nave'

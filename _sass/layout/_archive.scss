@@ -315,3 +315,39 @@
     }
   }
 }
+
+.archive {
+  margin-top: calc(#{$masthead-height} + 1.5rem);
+  padding-bottom: 4rem;
+}
+
+.archive__item-title a {
+  text-decoration: none;
+  color: var(--global-text-color);
+}
+
+.archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+.publication-category h2 {
+  margin-top: 2.5rem;
+  font-size: $type-size-4;
+  letter-spacing: 0.15em;
+  color: var(--global-text-color);
+}
+
+.publication-entry {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-color: var(--global-border-color);
+}
+
+.publication-entry__authors {
+  color: var(--global-text-color);
+}
+
+.publication-entry__venue {
+  margin-top: 0.25rem;
+  color: var(--global-text-color-light);
+}

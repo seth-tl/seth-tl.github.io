@@ -5,15 +5,10 @@
 .masthead {
   position: fixed;
   background: var(--global-bg-color);
-  height: fit-content;
   top: 0;
   width: 100%;
-
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
   z-index: 20;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
 
   &::after {
     content: "";
@@ -27,7 +22,10 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.85rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -36,46 +34,57 @@
 
     nav {
       z-index: 10;
+      width: 100%;
     }
 
     a {
       text-decoration: none;
+      color: inherit;
     }
   }
 }
 
 .masthead__menu {
+  width: 100%;
 
-  ul {
+  ul.visible-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
     margin: 0;
     padding: 0;
-    clear: both;
-    list-style-type: none;
+    list-style: none;
+    justify-content: flex-start;
+  }
+
+  .masthead__menu-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+
+    &--lg {
+      margin-right: auto;
+      font-weight: 700;
+      font-size: $type-size-5;
+    }
   }
 }
 
-.masthead__menu-item {
-  background-color: var(--global-bg-color);
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
-
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
-  }
+.masthead__menu-item a {
+  color: var(--global-text-color);
+  font-weight: 500;
 }
 
 .masthead__menu-item.selected a {
   color: var(--global-text-color);
   font-weight: 700;
-  border-bottom: 2px solid var(--global-text-color);
-  pointer-events: none; /* Move this here */
-  cursor: default; /* Move this here too */
+  border-bottom: none;
+  cursor: default;
 }
 
 .masthead__menu-item.selected a:hover {
   color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-text-color);
-  /* No need to repeat pointer-events and cursor here */
 }
