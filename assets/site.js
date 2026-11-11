@@ -1,0 +1,17 @@
+'use strict';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safe=s=>{if(!s)return '';try{const u=new URL(s,location.href);return ['http:','https:'].includes(u.protocol)?u.href:''}catch{return ''}};
+const link=(url,label)=>safe(url)?`<a href="${esc(safe(url))}">${esc(label)}</a>`:'';
+(async()=>{try{
+let data;if(new URLSearchParams(location.search).has('preview')){try{data=JSON.parse(sessionStorage.getItem('seth-preview'))}catch{}}
+if(!data){const r=await fetch('content/site.json');if(!r.ok)throw Error('Content could not be loaded');data=await r.json()}
+document.querySelectorAll('[data-profile]').forEach(el=>el.textContent=data.profile[el.dataset.profile]||'');
+document.querySelectorAll('[data-link]').forEach(el=>{const k=el.dataset.link;el.href=k==='email'?'mailto:'+data.profile.email:safe(data.profile[k])});
+document.querySelector('#publication-list').innerHTML=data.publications.map((p,i)=>`<li class="publication" id="publication-${esc(p.date)}-${i+1}">${p.image&&safe(p.image)?`<img class="pub-figure" src="${esc(safe(p.image))}" alt="${esc(p.imageAlt||'Figure for '+p.title)}" loading="lazy">`:''}<span class="pub-title">${link(p.paperurl,p.title)||esc(p.title)}</span><br>${esc(p.authors)}.<div class="pub-meta"><i>${esc(p.venue)}</i>, ${esc(p.date.slice(0,4))}.${p.category==='preprints'?' (Preprint)':''}</div><div class="pub-links">${[safe(p.paperurl)?'['+link(p.paperurl,'paper')+']':'',safe(p.arxivurl)?'['+link(p.arxivurl,'arXiv')+']':'',p.citation?`[<button data-cite="${i}">copy citation</button>]`:''].filter(Boolean).join(' ')}</div>${p.citation?`<details class="citation"><summary>Citation</summary><p>${esc(p.citation)}</p></details>`:''}</li>`).join('');
+document.querySelectorAll('[data-cite]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(data.publications[+b.dataset.cite].citation);b.textContent='copied'}catch{b.textContent='copy unavailable'}}));
+const gallery=document.querySelector('#gallery-list');
+const images=(data.gallery||[]).filter(g=>safe(g.image));
+gallery.innerHTML=images.length?images.map(g=>`<figure><a href="${esc(safe(g.image))}"><img src="${esc(safe(g.image))}" alt="${esc(g.alt||g.title||'Gallery image')}" loading="lazy"></a>${g.title||g.caption?`<figcaption>${g.title?`<strong>${esc(g.title)}</strong>`:''}${g.caption?`<p>${esc(g.caption)}</p>`:''}</figcaption>`:''}</figure>`).join(''):'<p class="empty">Images will be added here.</p>';
+if(safe(data.profile.cvUrl)){const cv=document.querySelector('#cv-download');cv.hidden=false;cv.innerHTML='['+link(data.profile.cvUrl,'Download CV (PDF)')+']'}
+const talks=document.querySelector('#talk-list');if(data.talks.length){talks.innerHTML=data.talks.map(t=>`<li class="talk-row"><strong>${link(t.url,t.title)||esc(t.title)}</strong><p>${esc(t.venue)}${t.location?', '+esc(t.location):''}${t.date?' — '+esc(t.date):''}</p>${t.description?`<p>${esc(t.description)}</p>`:''}<p>${[safe(t.slides)?'['+link(t.slides,'slides')+']':'',safe(t.video)?'['+link(t.video,'video')+']':''].filter(Boolean).join(' ')}</p></li>`).join('')}else{talks.hidden=true;const p=document.createElement('p');p.className='empty';p.textContent='Selected talks will be listed here.';talks.after(p)}
+}catch(e){const el=document.querySelector('#load-error');el.hidden=false;el.textContent='Unable to load content. Please serve this folder over HTTP and check content/site.json.';console.error(e)}})();
