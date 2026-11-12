@@ -1,16 +1,4 @@
 {
-  "profile": {
-    "name": "Seth Taylor",
-    "role": "PIMS Postdoctoral Fellow",
-    "institution": "University of Saskatchewan",
-    "department": "Department of Computer Science",
-    "email": "seth.taylor@usask.ca",
-    "scholar": "https://scholar.google.com/citations?user=wYCWtBAAAAAJ&hl=en",
-    "github": "https://github.com/seth-tl",
-    "cvText": "PIMS Postdoctoral Fellow, Department of Computer Science, University of Saskatchewan.\n\nPh.D., Department of Mathematics and Statistics, McGill University. Supervisor: Jean-Christophe Nave.",
-    "cvUrl": "",
-    "collaboratorsText": "Collaborators will be listed here."
-  },
   "publications": [
     {
       "title": "A characteristic mapping method for dissipative evolution equations",
@@ -22,7 +10,8 @@
       "arxivurl": "",
       "citation": "Holman-Bissegger, W., Taylor, S., & Nave, J.-C. (2026). A characteristic mapping method for dissipative evolution equations. arXiv:2611.08261. https://doi.org/10.48550/arXiv.2611.08261",
       "image": "",
-      "imageAlt": ""
+      "imageAlt": "",
+      "codeurl": ""
     },
     {
       "title": "Suêtes: An end-to-end differentiable non-hydrostatic limited-area dynamical core",
@@ -34,7 +23,8 @@
       "arxivurl": "",
       "citation": "Whittaker, T., Taylor, S., Cardoso-Bihlo, E., Di Luca, A., & Bihlo, A. (2026). Suêtes: An end-to-end differentiable non-hydrostatic limited-area dynamical core. arXiv:2609.36381. https://doi.org/10.48550/arXiv.2609.36381",
       "image": "",
-      "imageAlt": ""
+      "imageAlt": "",
+      "codeurl": ""
     },
     {
       "title": "Learning Vertical Coordinates via Automatic Differentiation of a Dynamical Core",
@@ -46,7 +36,8 @@
       "arxivurl": "https://arxiv.org/abs/2512.17877",
       "citation": "Whittaker, T., Taylor, S., Cardoso-Bihlo, E., Di Luca, A., & Bihlo, A. (2026). Learning vertical coordinates via automatic differentiation of a dynamical core. Journal of Advances in Modeling Earth Systems, 18(8), e2025MS005711. https://doi.org/10.1029/2025MS005711",
       "image": "",
-      "imageAlt": ""
+      "imageAlt": "",
+      "codeurl": ""
     },
     {
       "title": "Thermodynamically Constrained Information Geometric Regularization for Compressible Flows",
@@ -58,7 +49,8 @@
       "arxivurl": "",
       "citation": "Taylor, S., Spiteri, R. J., & Gaudreault, S. (2026). \"Thermodynamically Constrained Information Geometric Regularization for Compressible Flows.\" arXiv:2604.27286.",
       "image": "",
-      "imageAlt": ""
+      "imageAlt": "",
+      "codeurl": ""
     },
     {
       "title": "Diffeomorphic Neural Operator Learning",
@@ -70,7 +62,8 @@
       "arxivurl": "",
       "citation": "Taylor, S., Bihlo, A., & Nave, J. C. (2025). \"Diffeomorphic Neural Operator Learning.\" arXiv:2508.06690.",
       "image": "",
-      "imageAlt": ""
+      "imageAlt": "",
+      "codeurl": ""
     },
     {
       "title": "A projection-based Characteristic Mapping method for tracer transport on the sphere",
@@ -81,8 +74,9 @@
       "paperurl": "https://doi.org/10.1016/j.jcp.2022.111905",
       "arxivurl": "https://arxiv.org/abs/2106.13170",
       "citation": "Taylor, S., & Nave, J.-C. (2023). A projection-based Characteristic Mapping method for tracer transport on the sphere. Journal of Computational Physics, 477, 111905. https://doi.org/10.1016/j.jcp.2022.111905",
-      "image": "",
-      "imageAlt": ""
+      "image": "../assets/pictures/Zoom_Mandelbrot.jpg",
+      "imageAlt": "",
+      "codeurl": ""
     },
     {
       "title": "A characteristic mapping method for incompressible hydrodynamics on a rotating sphere",
@@ -94,7 +88,8 @@
       "arxivurl": "https://arxiv.org/abs/2302.01205",
       "citation": "Taylor, S., & Nave, J.-C. (2023). A characteristic mapping method for incompressible hydrodynamics on a rotating sphere. arXiv:2302.01205. https://doi.org/10.48550/arXiv.2302.01205",
       "image": "",
-      "imageAlt": ""
+      "imageAlt": "",
+      "codeurl": ""
     }
   ]
 }
