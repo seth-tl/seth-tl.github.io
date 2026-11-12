@@ -1,2 +1,1 @@
-# Seth Taylor — research website
-
+# Seth Taylor : Research Website
