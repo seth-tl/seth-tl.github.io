@@ -4,13 +4,11 @@
     "role": "PIMS Postdoctoral Fellow",
     "institution": "University of Saskatchewan",
     "department": "Department of Computer Science",
-    "location": "Saskatoon, Canada",
     "email": "seth.taylor@usask.ca",
     "scholar": "https://scholar.google.com/citations?user=wYCWtBAAAAAJ&hl=en",
     "github": "https://github.com/seth-tl",
     "cvText": "PIMS Postdoctoral Fellow, Department of Computer Science, University of Saskatchewan.\n\nPh.D., Department of Mathematics and Statistics, McGill University. Supervisor: Jean-Christophe Nave.",
     "cvUrl": "",
-    "teachingText": "Teaching information will be added here.",
     "collaboratorsText": "Collaborators will be listed here."
   },
   "publications": [
@@ -98,7 +96,5 @@
       "image": "",
       "imageAlt": ""
     }
-  ],
-  "talks": [],
-  "gallery": []
+  ]
 }
