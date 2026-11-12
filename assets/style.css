@@ -488,3 +488,68 @@ footer {
   break-inside: avoid;
   margin-bottom: 5px;
 }
+
+/* Plain selectable email text; it does not open a mail app. */
+.profile-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.profile-email span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Click a figure, or focus it and press Enter, to enlarge it. */
+.zoomable-image {
+  cursor: zoom-in;
+}
+.image-viewer-open {
+  overflow: hidden;
+}
+.image-viewer {
+  width: fit-content;
+  max-width: 94vw;
+  max-height: 94vh;
+  padding: 45px 18px 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+}
+.image-viewer::backdrop {
+  background: rgb(0 0 0 / 75%);
+}
+.image-viewer figure {
+  margin: 0;
+}
+.image-viewer-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(1200px, 86vw);
+  max-height: 74vh;
+  object-fit: contain;
+}
+.image-viewer figcaption {
+  max-width: 85vw;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.image-viewer-close {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--panel);
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+

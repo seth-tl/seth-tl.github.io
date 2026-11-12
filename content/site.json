@@ -9,7 +9,7 @@
       "paperurl": "https://arxiv.org/abs/2611.08261",
       "arxivurl": "",
       "citation": "Holman-Bissegger, W., Taylor, S., & Nave, J.-C. (2026). A characteristic mapping method for dissipative evolution equations. arXiv:2611.08261. https://doi.org/10.48550/arXiv.2611.08261",
-      "image": "",
+      "image": "assets/pictures/dissipative_cmm_figure.png",
       "imageAlt": "",
       "codeurl": ""
     },
@@ -22,8 +22,8 @@
       "paperurl": "https://arxiv.org/abs/2609.36381",
       "arxivurl": "",
       "citation": "Whittaker, T., Taylor, S., Cardoso-Bihlo, E., Di Luca, A., & Bihlo, A. (2026). Suêtes: An end-to-end differentiable non-hydrostatic limited-area dynamical core. arXiv:2609.36381. https://doi.org/10.48550/arXiv.2609.36381",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/pictures/suetes_figures.png",
+      "imageAlt": "Example figure for testing the publication image layout; illustrative curves, not research results.",
       "codeurl": ""
     },
     {
@@ -35,7 +35,7 @@
       "paperurl": "https://doi.org/10.1029/2025MS005711",
       "arxivurl": "https://arxiv.org/abs/2512.17877",
       "citation": "Whittaker, T., Taylor, S., Cardoso-Bihlo, E., Di Luca, A., & Bihlo, A. (2026). Learning vertical coordinates via automatic differentiation of a dynamical core. Journal of Advances in Modeling Earth Systems, 18(8), e2025MS005711. https://doi.org/10.1029/2025MS005711",
-      "image": "",
+      "image": "assets/pictures/learned_vertical_coord_figure.png",
       "imageAlt": "",
       "codeurl": ""
     },
@@ -48,7 +48,7 @@
       "paperurl": "https://arxiv.org/abs/2604.27286",
       "arxivurl": "",
       "citation": "Taylor, S., Spiteri, R. J., & Gaudreault, S. (2026). \"Thermodynamically Constrained Information Geometric Regularization for Compressible Flows.\" arXiv:2604.27286.",
-      "image": "",
+      "image": "assets/pictures/geometric_visual_TIGRE.png",
       "imageAlt": "",
       "codeurl": ""
     },
@@ -61,7 +61,7 @@
       "paperurl": "https://arxiv.org/abs/2508.06690",
       "arxivurl": "",
       "citation": "Taylor, S., Bihlo, A., & Nave, J. C. (2025). \"Diffeomorphic Neural Operator Learning.\" arXiv:2508.06690.",
-      "image": "",
+      "image": "assets/pictures/turbulence_visual.png",
       "imageAlt": "",
       "codeurl": ""
     },
@@ -87,7 +87,7 @@
       "paperurl": "https://arxiv.org/abs/2302.01205",
       "arxivurl": "https://arxiv.org/abs/2302.01205",
       "citation": "Taylor, S., & Nave, J.-C. (2023). A characteristic mapping method for incompressible hydrodynamics on a rotating sphere. arXiv:2302.01205. https://doi.org/10.48550/arXiv.2302.01205",
-      "image": "",
+      "image": "assets/pictures/multi_jet_evolution_redo.png",
       "imageAlt": "",
       "codeurl": ""
     }
