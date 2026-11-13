@@ -553,3 +553,62 @@ footer {
 }
 
 
+
+/* Teaching and supervision page */
+
+.teaching-page {
+  line-height: 1.5;
+}
+
+/* Main section headings */
+.teaching-page h2 {
+  margin: 1.5rem 0 0.65rem;
+}
+
+.teaching-page h2:first-child {
+  margin-top: 0;
+}
+
+/* Individual entries */
+.teaching-page section {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+/* Entry titles */
+.teaching-page h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Institution, dates, and position */
+.teaching-page .entry-meta {
+  margin: 0 0 0.3rem;
+  color: #777;
+  font-size: 0.92rem;
+}
+
+/* Descriptions */
+.teaching-page p {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+/* Research supervision lists */
+.teaching-page ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.35rem;
+}
+
+.teaching-page li {
+  margin: 0 0 0.2rem;
+  line-height: 1.5;
+}
+
+.teaching-page li:last-child {
+  margin-bottom: 0;
+}
+
+
