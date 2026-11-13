@@ -1,23 +1,36 @@
-<!-- EDIT THIS FILE to add gallery images or videos.
-     Put your media in assets/, then copy a figure below into the gallery-grid.
-     Paths are relative to the website page, NOT this content folder.
 
-<figure>
-  <a href="assets/figure.jpg">
-    <img src="assets/figure.jpg" alt="Describe the image" loading="lazy">
-  </a>
-  <figcaption>A short caption.</figcaption>
-</figure>
+<!-- Research Gallery -->
 
-<figure>
-  <video controls playsinline preload="metadata">
-    <source src="assets/simulation.mp4" type="video/mp4">
-    <a href="assets/simulation.mp4">Download the video</a>
-  </video>
-  <figcaption>Description of the simulation.</figcaption>
-</figure>
--->
 <div class="gallery-grid">
-  <!-- Paste your figures here. Remove the placeholder paragraph when ready. -->
-  <p>Images will be added here.</p>
+
+  <figure class="gallery-item">
+    <video controls playsinline preload="metadata">
+      <source src="assets/videos/random_sphere_fixed.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <figcaption>
+      Barotropic vorticity equations with randomly initialized vorticity.
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-item">
+    <video controls playsinline preload="metadata">
+      <source src="assets/videos/EP_diff_simulation.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <figcaption>
+      Euler--Poincaré equations simulation for two colliding fronts. The method retains locality of the collision front.
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-item">
+    <video controls playsinline preload="metadata">
+      <source src="assets/videos/mandelbrot_fast.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <figcaption>
+      Advection of a fractal set on the sphere. The method is able to retain arbitrarily fine scales in the transported field.
+    </figcaption>
+  </figure>
+
 </div>

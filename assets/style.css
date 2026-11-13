@@ -685,3 +685,46 @@ footer {
     max-width: 420px;
   }
 }
+
+
+
+/* ==================================
+   Research gallery
+   ================================== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.gallery-grid .gallery-item,
+[data-content] .gallery-grid .gallery-item {
+  margin: 0;
+  width: 100%;
+}
+
+.gallery-grid video,
+[data-content] .gallery-grid video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #000;
+  border-radius: 4px;
+}
+
+.gallery-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+/* Smaller spacing on mobile */
+@media (max-width: 600px) {
+  .gallery-grid {
+    gap: 1.5rem;
+  }
+}
+
