@@ -24,7 +24,7 @@
       "citation": "Whittaker, T., Taylor, S., Cardoso-Bihlo, E., Di Luca, A., & Bihlo, A. (2026). Suêtes: An end-to-end differentiable non-hydrostatic limited-area dynamical core. arXiv:2609.36381. https://doi.org/10.48550/arXiv.2609.36381",
       "image": "assets/pictures/suetes_figures.png",
       "imageAlt": "Example figure for testing the publication image layout; illustrative curves, not research results.",
-      "codeurl": ""
+      "codeurl": "https://github.com/Suetes/suetes"
     },
     {
       "title": "Learning Vertical Coordinates via Automatic Differentiation of a Dynamical Core",
@@ -37,7 +37,7 @@
       "citation": "Whittaker, T., Taylor, S., Cardoso-Bihlo, E., Di Luca, A., & Bihlo, A. (2026). Learning vertical coordinates via automatic differentiation of a dynamical core. Journal of Advances in Modeling Earth Systems, 18(8), e2025MS005711. https://doi.org/10.1029/2025MS005711",
       "image": "assets/pictures/learned_vertical_coord_figure.png",
       "imageAlt": "",
-      "codeurl": ""
+      "codeurl": "https://github.com/timwhittaker/learning_vertical_coord"
     },
     {
       "title": "Thermodynamically Constrained Information Geometric Regularization for Compressible Flows",
@@ -76,7 +76,7 @@
       "citation": "Taylor, S., & Nave, J.-C. (2023). A projection-based Characteristic Mapping method for tracer transport on the sphere. Journal of Computational Physics, 477, 111905. https://doi.org/10.1016/j.jcp.2022.111905",
       "image": "assets/pictures/Zoom_Mandelbrot.png",
       "imageAlt": "",
-      "codeurl": ""
+      "codeurl": "https://github.com/seth-tl/CMM-S2"
     },
     {
       "title": "A characteristic mapping method for incompressible hydrodynamics on a rotating sphere",
@@ -89,7 +89,7 @@
       "citation": "Taylor, S., & Nave, J.-C. (2023). A characteristic mapping method for incompressible hydrodynamics on a rotating sphere. arXiv:2302.01205. https://doi.org/10.48550/arXiv.2302.01205",
       "image": "assets/pictures/multi_jet_evolution_redo.png",
       "imageAlt": "",
-      "codeurl": ""
+      "codeurl": "https://github.com/seth-tl/CMM-S2"
     }
   ]
 }
