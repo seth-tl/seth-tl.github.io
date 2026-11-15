@@ -99,6 +99,14 @@ footer {
   border-right: 1px solid var(--line);
   padding-right: 25px;
 }
+@media (width > 720px) {
+  .profile-sidebar {
+    position: sticky;
+    top: 40px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+}
 .profile-sidebar .portrait {
   display: block;
   width: 165px;
@@ -250,17 +258,19 @@ footer {
   font-size: 0.875rem;
   line-height: 1.4;
 }
+.pub-authors {
+  display: block;
+}
+.pub-meta,
+.pub-links {
+  display: inline;
+}
 .pub-meta {
   color: #555;
 }
-.pub-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 0.8rem;
-  margin-top: 0.25rem;
-}
 .pub-links .pub-action {
   display: inline-flex;
+  margin-inline-start: 0.65rem;
   align-items: center;
   gap: 4px;
   padding: 2px 0;
