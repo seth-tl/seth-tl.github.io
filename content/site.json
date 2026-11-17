@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "A Five-Dimensional Geometric Formulation of Geophysical Fluid Dynamics",
+      "date": "2026-11-15",
+      "authors": "Stéphane Gaudreault, Seth Taylor, Arad Nasiri, Sanjeev S. Seahra, and Raymond J. Spiteri",
+      "venue": "arXiv",
+      "category": "preprints",
+      "paperurl": "https://arxiv.org/abs/2611.19685",
+      "arxivurl": "",
+      "citation": "Gaudreault, S., Taylor, S., Nasiri, A., Seahra, S. S., and Spiteri, R. J. (2026). A Five-Dimensional Geometric Formulation of Geophysical Fluid Dynamics. arxiv:2611.19685. https://doi.org/10.48550/arXiv.2611.19685",
+      "image": "",
+      "imageAlt": "",
+      "codeurl": ""
+    },
+
+    {
       "title": "A characteristic mapping method for dissipative evolution equations",
       "date": "2026-11-05",
       "authors": "William Holman-Bissegger, Seth Taylor, Jean-Christophe Nave",
